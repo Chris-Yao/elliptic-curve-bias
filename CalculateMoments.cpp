@@ -83,6 +83,16 @@ __int128 getStartingIndex(int n, vector<__int128>& primeList) {
 
 // Legendre Symbol calcs from https://math.stackexchange.com/questions/447468/fast-legendre-symbol-calculation
 int calculateMoment(__int128 maxSize, __int128 maxPower) {
+    /*
+    Calculates moments of elliptic curve families
+
+    Inputs: 
+        maxSize (int): prime number to calculate the moments up to
+        maxPower (int): the number of moments to calculate
+
+    Outputs:
+        A .txt file of the moments.
+    */
     
     //Initializing the list of primes from .txt file
     vector<__int128> primeList;
